@@ -1,17 +1,13 @@
-{% set name = "nltk_data" %}
 {% set version = "2019.07.04" %}
 {% set commit = "52625dd6376a64142a17bc04a6ad59215f5d3118" %}
-{% set hash_type = "sha256" %}
-{% set hash_val = "25949c8db62684bc9ce7ba9ee26501a75709a096845644e13993ff6aee5d71d7" %}
 
 package:
-  name: {{ name }}
+  name: nltk_data
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/nltk/nltk_data/archive/{{ commit }}.tar.gz
-  {{ hash_type }}: {{ hash_val }}
+  sha256: 25949c8db62684bc9ce7ba9ee26501a75709a096845644e13993ff6aee5d71d7
 
 build:
   number: 0
