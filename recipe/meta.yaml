@@ -1,5 +1,5 @@
-{% set version = "2017.10.22" %}
-{% set commit = "c0a373066e1477bd201acb071be171e8cc0ca673" %}
+{% set version = "2019.07.04" %}
+{% set commit = "52625dd6376a64142a17bc04a6ad59215f5d3118" %}
 
 package:
   name: nltk_data
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/nltk/nltk_data/archive/{{ commit }}.tar.gz
-  sha256: 6eecc4c8ab109035fc92f8b1b44a43a6016226ba4e6d60e09b5fcbf9c1ab7304
+  sha256: 25949c8db62684bc9ce7ba9ee26501a75709a096845644e13993ff6aee5d71d7
 
 build:
   number: 0
@@ -18,7 +18,7 @@ requirements:
     - unzip
   run:
     - python
-    - nltk >=3.2.5
+    - nltk >=3.4.4
 
 about:
   home: http://nltk.org/
