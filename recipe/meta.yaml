@@ -10,12 +10,12 @@ source:
   sha256: 25949c8db62684bc9ce7ba9ee26501a75709a096845644e13993ff6aee5d71d7
 
 build:
-  number: 0
-  noarch: generic
+  number: 1
 
 requirements:
   build:
-    - unzip
+    - unzip  # [unix]
+    - 7za  # [win]
   run:
     - python
     - nltk >=3.4.4
@@ -29,3 +29,4 @@ extra:
   recipe-maintainers:
     - danielfrg
     - quartox
+    - benhuff
