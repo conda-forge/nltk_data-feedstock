@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/nltk/nltk_data/archive/{{ commit }}.tar.gz
-  sha256: 24f30dc42200686e39b37ac4d8d8921e26e540080ab7aa4ff282a7fba5a13ffd
+  sha256: e57afceb16c70a64e53d3c5e2955001cc74e7af214ecdfdc4d263f8caf9a934d
 
 build:
   number: 0
