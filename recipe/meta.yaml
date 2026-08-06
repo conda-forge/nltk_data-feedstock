@@ -22,10 +22,11 @@ requirements:
 
 about:
   home: https://www.nltk.org/
-  license: Various
   # Apache-2.0 governs the repository as a whole, but each data package carries
-  # its own terms, some of them restrictive; hence "Various" rather than an
-  # SPDX expression. See LICENSE-OVERVIEW.md and DATASET-LICENSES.md.
+  # its own terms, some of them restrictive, and a few are unclarified upstream.
+  # No single SPDX expression covers the bundle, so use a LicenseRef.
+  # See LICENSE-OVERVIEW.md and DATASET-LICENSES.md.
+  license: LicenseRef-Various
   license_file:
     - LICENSE
     - LICENSE-OVERVIEW.md
