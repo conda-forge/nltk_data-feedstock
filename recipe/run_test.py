@@ -1,22 +1,22 @@
 import sys
 import nltk.data
 
-try:
-    sent_detector = nltk.data.load("tokenizers/punkt/english.pickle")
-    print("NLTK data found")
-except Exception as e:
-    print("NLTK data NOT found:")
-    print(e)
-    sys.exit(1)
+# The recipe supports nltk >=3.4.4, which spans a resource rename: older nltk
+# reads the punkt pickle and the unsuffixed tagger, while nltk >=3.9 resolves
+# those to punkt_tab and the *_eng taggers. Assert both generations so a stale
+# snapshot missing either one fails the build.
+required = [
+    "tokenizers/punkt/english.pickle",
+    "tokenizers/punkt_tab/english/",
+    "taggers/averaged_perceptron_tagger_eng/",
+]
 
-# nltk >=3.9 resolves the punkt pickle to punkt_tab, and pos_tag to the
-# *_eng taggers, so check those explicitly to catch a stale data snapshot.
-try:
-    nltk.data.find("tokenizers/punkt_tab/english/")
-    nltk.data.find("taggers/averaged_perceptron_tagger_eng/")
-    print("NLTK pickle-free data found")
-    sys.exit(0)
-except Exception as e:
-    print("NLTK pickle-free data NOT found:")
-    print(e)
-    sys.exit(1)
+for resource in required:
+    try:
+        nltk.data.find(resource)
+    except LookupError as e:
+        print(f"NLTK data NOT found: {resource}")
+        print(e)
+        sys.exit(1)
+
+print("NLTK data found")

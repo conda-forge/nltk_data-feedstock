@@ -21,9 +21,17 @@ requirements:
     - nltk >=3.4.4
 
 about:
-  home: http://nltk.org/
+  home: https://www.nltk.org/
   license: Various
+  # Apache-2.0 governs the repository as a whole, but each data package carries
+  # its own terms, some of them restrictive; hence "Various" rather than an
+  # SPDX expression. See LICENSE-OVERVIEW.md and DATASET-LICENSES.md.
+  license_file:
+    - LICENSE
+    - LICENSE-OVERVIEW.md
+    - DATASET-LICENSES.md
   summary: Data for the Natural Language Toolkit
+  dev_url: https://github.com/nltk/nltk_data
 
 extra:
   recipe-maintainers:
