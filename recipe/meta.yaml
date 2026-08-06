@@ -1,5 +1,5 @@
-{% set version = "2022.05.27" %}
-{% set commit = "444941def3726b7d12605b5cfdbf2f906af152a9" %}
+{% set version = "2026.07.01" %}
+{% set commit = "550b6625bcef1f2abff2ff770a5a0d272c9c6b2a" %}
 
 package:
   name: nltk_data
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/nltk/nltk_data/archive/{{ commit }}.tar.gz
-  sha256: e57afceb16c70a64e53d3c5e2955001cc74e7af214ecdfdc4d263f8caf9a934d
+  sha256: ab4c9d39fef45537e063ff4d1abc0b05f9b8ef9c1f91d1d64c711c06a849419b
 
 build:
   number: 0
@@ -30,4 +30,4 @@ extra:
     - danielfrg
     - quartox
     - benhuff
-    - mxr-conda 
+    - mxr-conda
