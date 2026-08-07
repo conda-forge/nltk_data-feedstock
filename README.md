@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nltk_data-feeds
 
 Home: https://www.nltk.org/
 
-Package license: Various
+Package license: LicenseRef-Various
 
 Summary: Data for the Natural Language Toolkit
 
@@ -219,7 +219,4 @@ Feedstock Maintainers
 * [@danielfrg](https://github.com/danielfrg/)
 * [@mxr-conda](https://github.com/mxr-conda/)
 * [@quartox](https://github.com/quartox/)
-
-
-<!-- dummy commit to enable rerendering -->
 
