@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nltk_data-feeds
 
 Home: https://www.nltk.org/
 
-Package license: Various
+Package license: LicenseRef-Various
 
 Summary: Data for the Natural Language Toolkit
 
